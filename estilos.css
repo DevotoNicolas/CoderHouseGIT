@@ -24,27 +24,6 @@ header {
     width: 70px;
 }
 
-.botones {
-    display: flex;
-    gap: 10px;
-    /* Espacio entre los botones */
-    padding: 10px;
-}
-
-.btn {
-    padding: 16px 16px;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 20px 0px 20px 0px;
-    cursor: pointer;
-    text-align: center;
-}
-
-.btn:hover {
-    background-color: #f0f0f0;
-}
-
 /* Categorias debajo del footer */
 .categorias {
     display: flex;
