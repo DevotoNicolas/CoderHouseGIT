@@ -1,0 +1,77 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.main {
+    width: 1440px;
+}
+
+body{
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0%;
+    padding: 10px;
+    background-color: #e10600;
+}
+
+.logo {
+    padding-left: 20px;
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    /* Espacio entre los botones */
+    padding: 10px;
+}
+
+.btn {
+    padding: 16px 16px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 20px 0px 20px 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Categorias debajo del footer */
+.categorias {
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    background-color: #15151e;
+    padding: 20px 0;
+}
+
+.categorias a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    border-right: 1px solid white;
+    padding-right: 20px;
+
+}
+
+.categorias a:last-child {
+    border-right: none;
+    /* Quitar la línea del último hijo*/
+}
+
+.categorias a:hover {
+    color: #f00;
+}

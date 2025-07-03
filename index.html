@@ -1,0 +1,200 @@
+<!-- Atajo para comentar Ctrl + K + C -->
+<!-- CTRL + D Selecciona palabras con el mismo nombre -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Formula1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="./javaScript.js"></script>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+
+    <!-- Pido perdon pero realmente intente utilizar bootstrap, capaz más adelante vuelva a intentar cambiar
+    las cosas, pero por el momento ya que no estuve teniendo mucho tiempo -->
+
+<body>
+    <header>
+        <img src="./img/logotipoF1.jpg" alt="logo" class="logo">
+        <div class="botones">
+            <button type="button" class="btn">Iniciar sesión</button>
+            <button type="button" class="btn">Registrarse</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Categorias debajo del header -->
+        <!-- Colocar en un futuro referencias a otros html -->
+        <nav class="categorias">
+            <a href="#">Inicio</a>
+            <a href="#">Noticias</a>
+            <a href="#">Calendario</a>
+            <a href="#">Pilotos</a>
+            <a href="equipos.html">Equipos</a>
+            <a href="#">Historia</a>
+        </nav>
+
+        <section class="background">
+            <h2>Conoce de la Formula 1</h2>
+            <p>Posiciones del último GP corrido
+            </p>
+        </section>
+        <!-- seccion de los circulos -->
+
+        <section class="tituloEquipo">
+            <h3>Equipos</h3>
+        </section>
+
+        <section class="carrusel-container">
+            <button class="flecha izquierda">❮</button>
+
+            <div class="carrusel" id="carrusel">
+                <div class="card">
+                    <img src="./img/austria.jpg" alt="Austria">
+                    <div class="info-card">
+                        <p>RONDA 11</p>
+                        <h3>Austria</h3>
+                        <span>Junio 27–29</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/granBretaña.jpg" alt="Great Britain">
+                    <div class="info-card">
+                        <p>RONDA 12</p>
+                        <h3>Gran Bretaña</h3>
+                        <span>Julio 04–06</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/granBretaña.jpg" alt="Great Britain">
+                    <div class="info-card">
+                        <p>RONDA 12</p>
+                        <h3>Gran Bretaña</h3>
+                        <span>Julio 04–06</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/granBretaña.jpg" alt="Great Britain">
+                    <div class="info-card">
+                        <p>RONDA 12</p>
+                        <h3>Gran Bretaña</h3>
+                        <span>Julio 04–06</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/granBretaña.jpg" alt="Great Britain">
+                    <div class="info-card">
+                        <p>RONDA 12</p>
+                        <h3>Gran Bretaña</h3>
+                        <span>Julio 04–06</span>
+                    </div>
+                </div>
+
+                <!-- más cards aquí -->
+            </div>
+
+            <button class="flecha derecha">❯</button>
+        </section>
+
+        <section class="tituloTopicos">
+            <h2>Últimas noticias</h2>
+        </section>
+
+        <section class="topicos">
+            <div class="contenedor">
+                <div class="imagen">
+                    <img src="./img/loganSargeant.jpg" alt="Logan Sargeant">
+                </div>
+                <div class="descripcion">
+                    <h3>¿Quiénes son los favoritos para ir a Silverstone?</h3>
+                    <p>Hace 2 horas</p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="imagen">
+                    <img src="./img/Arvid Lindblad.avif" alt="Arvid Lindblad">
+                </div>
+                <div class="descripcion">
+                    <h3>Arvid Lindblad entusiasmado por su debut en la FP1 con Red Bull</h3>
+                    <p>Hace 3 horas</p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="imagen">
+                    <img src="./img/premioGranBretaña.avif" alt="Premio Gran Bretaña">
+                </div>
+                <div class="descripcion">
+                    <h3>¿A qué hora es el Gran Premio de Gran Bretaña de Fórmula 1 2025 y cómo puedo verlo?</h3>
+                    <p>Hace 8 horas</p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="imagen">
+                    <img src="./img/premioGranBretaña.avif" alt="Premio Gran Bretaña">
+                </div>
+                <div class="descripcion">
+                    <h3>¿A qué hora es el Gran Premio de Gran Bretaña de Fórmula 1 2025 y cómo puedo verlo?</h3>
+                    <p>Hace 8 horas</p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="imagen">
+                    <img src="./img/premioGranBretaña.avif" alt="Premio Gran Bretaña">
+                </div>
+                <div class="descripcion">
+                    <h3>¿A qué hora es el Gran Premio de Gran Bretaña de Fórmula 1 2025 y cómo puedo verlo?</h3>
+                    <p>Hace 8 horas</p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="imagen">
+                    <img src="./img/premioGranBretaña.avif" alt="Premio Gran Bretaña">
+                </div>
+                <div class="descripcion">
+                    <h3>¿A qué hora es el Gran Premio de Gran Bretaña de Fórmula 1 2025 y cómo puedo verlo?</h3>
+                    <p>Hace 8 horas</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-banner">
+            <div class="contenido-banner">
+                <h2> <mark class="rojo">Suscribite</mark> para recibir las últimas novedades de Fórmula 1</h2>
+                <p>Mantenete informado con resultados, noticias y más directo en tu correo.</p>
+                <button class="btn-suscribirse">Suscribirme</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="grillaFooter">
+            <div class="footer-iconos">
+                <a href="#"><img src="./img/youtube.svg" alt="YouTube" class="tamIconos"></a>
+                <a href="#"><img src="./img/x.svg" alt="X" class="tamIconos"></a>
+                <a href="#"><img src="./img/instagram.svg" alt="Instagram" class="tamIconos"></a>
+            </div>
+
+            <p class="pfooter1">© 2003-2025 Formula One World Championship Limited</p>
+
+        </div>
+    </footer>
+
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+
+</body>
+</head>
+
+</html>

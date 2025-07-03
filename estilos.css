@@ -1,0 +1,459 @@
+/* Parametros globales */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.main {
+    width: 1440px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0%;
+    padding: 10px;
+    background-color: #e10600;
+}
+
+.logo {
+    padding-left: 20px;
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    /* Espacio entre los botones */
+    padding: 10px;
+}
+
+.btn {
+    padding: 16px 16px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 20px 0px 20px 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Categorias debajo del footer */
+.categorias {
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    background-color: #15151e;
+    padding: 20px 0;
+}
+
+.categorias a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    border-right: 1px solid white;
+    padding-right: 20px;
+
+}
+
+.categorias a:last-child {
+    border-right: none;
+    /* Quitar la línea del último hijo*/
+}
+
+.categorias a:hover {
+    color: #f00;
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('./img/formula1car.png');
+    background-size: cover;
+    /* Para que cubra todo sin deformarse */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* acá alineamos todo a la derecha */
+    /* centrado vertical */
+    height: 100vh;
+    text-align: right;
+    /* para no repetir el fondo por las dudas */
+    background-repeat: no-repeat;
+}
+
+.background h2 {
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 50px;
+    padding-top: 150px;
+    font-style: "Roboto";
+}
+
+.background p {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 30px;
+
+}
+
+/* Oscurecer los cuadrados para una mejor lectura  */
+/* No me funciona, revisar mas tarde */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Negro con transparencia */
+    z-index: 1;
+}
+
+.tituloEquipo {
+    padding: 30px 0px 0px 100px;
+    font-size: 33px;
+    text-align: center;
+    background-color: #15151e;
+    color: #f0f0f0;
+    display: flex;
+    grid-column: repeat(3, 1fr);
+    flex-direction: row;
+    align-items: start;
+    margin: 0;
+}
+
+/* Carrusel para el calendario y las fechas */
+.carrusel-container {
+    position: relative;
+    background-color: #15151e;
+    padding: 30px 0;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.carrusel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 0 60px;
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;
+}
+
+.carrusel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    scroll-snap-align: start;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    color: #fff;
+    width: 100%;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.info-card h3 {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-card span {
+    font-size: 14px;
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 14px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.flecha:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.flecha.izquierda {
+    left: 10px;
+}
+
+.flecha.derecha {
+    right: 10px;
+}
+
+.topicos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 40px;
+    background-color: black;
+}
+
+.tituloTopicos {
+    padding: 30px;
+    font-size: 33px;
+    text-align: center;
+    background-color: black;
+    color: #f0f0f0;
+    ;
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    flex-direction: row;
+    align-items: start;
+    margin: 0;
+}
+
+.tituloTopicos h2 {
+    display: flex;
+    grid-column: 1 / 3;
+    padding-left: 70px;
+
+}
+
+.contenedor {
+    width: 25rem;
+    height: 225px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #f84848;
+    cursor: pointer;
+}
+
+.contenedor .imagen {
+    flex: 3;
+    overflow: hidden;
+}
+
+.contenedor .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.contenedor .descripcion {
+    flex: 1;
+    background-color: #e10600;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor .descripcion h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.contenedor .descripcion p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+/* Subrayar el título al hacer hover sobre la imagen */
+.contenedor:hover .imagen img {
+    transform: scale(1.07);
+}
+
+.contenedor:hover .descripcion h3 {
+    text-decoration: underline;
+}
+
+.seccion-banner {
+    background-image: url('./img/winFlags.avif'); /* reemplazá por la imagen que quieras */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 80px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contenido-banner {
+    background-color: #15151e;
+    padding: 20px 30px;
+    border-radius: 8px;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+}
+
+.contenido-banner h2 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.contenido-banner p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.btn-suscribirse {
+    padding: 12px;
+    background-color: #f0f0f0;
+    color: #000;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-radius: 20px 0px 20px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-suscribirse:hover {
+    background-color: #c70700;
+}
+
+.rojo{
+    color: #e10600;
+    background-color: transparent;
+}
+
+/* INICIO DE FOOTER*/
+footer {
+    background-color: #15151e;
+}
+
+.footer-iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin: 0%;
+    padding: 10px;
+    grid-area: 1 / 2;
+}
+
+.tamIconos {
+    width: 40px;
+    height: 40px;
+}
+
+.grillaFooter {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.pfooter1 {
+    grid-area: 1 / 1;
+    /*Fila 2 Columna 1*/
+    color: #f0f0f0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+/*INICIO DE MEDIA QUERIS PARA REALIZAR EN UN FUTURO EL RESPONSIVE*/
+@media (max-width: 768px) {
+  .carrusel {
+    gap: 16px;
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .flecha {
+    display: none;
+  }
+
+  .info-card h3 {
+    font-size: 16px;
+  }
+
+  .info-card span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 160px;
+  }
+
+  .info-card h3 {
+    font-size: 14px;
+  }
+}
